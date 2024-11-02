@@ -1,2 +1,2 @@
 # HackTX-2024
-this is how shit works
+goku is the best
