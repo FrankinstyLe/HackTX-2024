@@ -4,7 +4,13 @@ import "./styles.css";
 function App() {
   return (
     <>
-      <div className="wrapper"></div>
+      <div className="border">
+        <div className="wrapper">
+          <div className="left-side"></div>
+          <div className="middle"></div>
+          <div className="right-side"></div>
+        </div>
+      </div>
     </>
   );
 }

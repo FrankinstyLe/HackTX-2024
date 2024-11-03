@@ -1,7 +1,50 @@
+@font-face {
+  font-family: SuperPixel;
+  src: url(./fonts/SuperPixel.ttf);
+}
+
+html {
+  min-height: 100%; /* Look, it's not fixed anymore! */
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url(../img/backgrounds/crtPattern.png);
+  display: flex;
+  flex-grow: 1;
+  margin: 0px;
+  width: 100vw;
+  font-family: SuperPixel;
+  background-color: black;
+}
+
+.border {
+  display: flex;
+  min-height: 100%;
+  width: 100vw;
+  backdrop-filter: blur(15px) saturate(3);
+  background-image: url(./img/backgrounds/nurse_background.png);
+}
+.wrapper {
+  margin: 16px;
+  display: flex;
+  flex-grow: 1;
+  background-color: black;
+  background-image: url(img/backgrounds/crtPattern.png);
+
   background-size: 4px;
 }
 
-.wrapper {
+.left-side {
+  flex-grow: 1;
+}
+.middle {
+  flex-grow: 1;
+}
+.right-side {
+  flex-grow: 1;
 }
