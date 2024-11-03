@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./styles.css";
 import { Options } from "./Options";
-import { chatbox } from "./chatbox";
+import { Chatbox } from "./Chatbox";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
           </div>
           <div className="right-side">
             <Options />
+            <Chatbox />
           </div>
         </div>
       </div>

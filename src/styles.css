@@ -51,3 +51,18 @@ body {
   padding: 16px;
   flex-grow: 1;
 }
+
+.girl{
+  cursor:pointer;
+}
+
+.user-box{
+  background-color: red;
+  width:100px;
+  height:100px;
+}
+.gemini-box{
+  background-color: red;
+  width:100px;
+  height:100px;
+}
