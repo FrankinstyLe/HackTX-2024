@@ -12,7 +12,7 @@ for m in genai.list_models():
         print(m.name)
 
 # Select the Gemini model
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
 # Initialize the chat with an empty history
 chat = model.start_chat(history=[])
