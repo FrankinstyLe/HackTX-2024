@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+.venv/*
 
 # Editor directories and files
 .vscode/*
@@ -24,7 +25,14 @@ dist-ssr
 *.sw?
 <<<<<<< HEAD
 *.env
+<<<<<<< HEAD
 =======
 *.env
 
 >>>>>>> f269656 (fixed the gemini model with persona prompt)
+=======
+
+=======
+*.env
+>>>>>>> 5c2dc26b328c04ac6232bc5fa7fc04276bce7e3d
+>>>>>>> 2958d34 (cleaned up files)
