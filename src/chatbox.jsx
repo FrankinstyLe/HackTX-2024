@@ -30,8 +30,10 @@ export function Chatbox() {
   function promptGemini() {
     if (prompt !== "") {
       appendPrompt(prompt)
-      console.log(userPrompts[userPrompts.length-1])
 
+
+      let tempPrompt = prompt;
+      setPrompt('')
     
 
       const apiKey = "AIzaSyDqQS7wrQO04ZNCI7bB1qApuvpsegYxIn0"
@@ -75,7 +77,7 @@ export function Chatbox() {
           history: [],
         });
 
-        const result = await chatSession.sendMessage(prompt);
+        const result = await chatSession.sendMessage(tempPrompt);
         appendResponse(result.response.text());
       
       }
