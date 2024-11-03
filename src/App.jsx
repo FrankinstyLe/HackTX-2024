@@ -10,11 +10,10 @@ function App() {
         <div className="wrapper">
           <div className="left-side"></div>
           <div className="middle">
-            <chatbox />
+            <Chatbox />
           </div>
           <div className="right-side">
             <Options />
-            <Chatbox />
           </div>
         </div>
       </div>

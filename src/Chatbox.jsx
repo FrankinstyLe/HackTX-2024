@@ -1,42 +1,33 @@
 import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-
-
 export function Chatbox() {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
 
-  const [userPrompts,addPrompt] = useState([]);
-  const [responses,addResponse] = useState([]);
+  const [userPrompts, addPrompt] = useState([]);
+  const [responses, addResponse] = useState([]);
 
+  const appendPrompt = (text) => {
+    addPrompt([...userPrompts, text]);
+  };
 
-  const appendPrompt = (text)=>{
-    addPrompt([...userPrompts,text])
-  }
+  const appendResponse = (res) => {
+    addResponse([...response, res]);
+  };
 
-  const appendResponse = (res)=>{
-    addResponse([...response,res])
-  }
-
-  
-  
- 
-
-  function handleChange(e){
-    setPrompt(e.target.value)
+  function handleChange(e) {
+    setPrompt(e.target.value);
   }
 
   function promptGemini() {
     if (prompt !== "") {
-      appendPrompt(prompt)
-
+      appendPrompt(prompt);
 
       let tempPrompt = prompt;
-      setPrompt('')
-    
+      setPrompt("");
 
-      const apiKey = "AIzaSyDqQS7wrQO04ZNCI7bB1qApuvpsegYxIn0"
+      const apiKey = "AIzaSyDqQS7wrQO04ZNCI7bB1qApuvpsegYxIn0";
       const genAI = new GoogleGenerativeAI(apiKey);
 
       const personalities = [
@@ -79,7 +70,6 @@ export function Chatbox() {
 
         const result = await chatSession.sendMessage(tempPrompt);
         appendResponse(result.response.text());
-      
       }
       run();
     }
@@ -95,15 +85,11 @@ export function Chatbox() {
             value={prompt}
             onChange={handleChange}
           ></input>
-          {userPrompts.map((value)=>{
-            return(
-              <div className="user-box">{value}</div>
-            )
+          {userPrompts.map((value) => {
+            return <div className="user-box">{value}</div>;
           })}
-          {responses.map((value)=>{
-            return(
-              <div className="gemini-box">{value}</div>
-            )
+          {responses.map((value) => {
+            return <div className="gemini-box">{value}</div>;
           })}
         </div>
         <button className="enter-btn" onClick={promptGemini}>
