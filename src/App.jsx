@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./styles.css";
 import "./components/OptionBtn"
+import "./components/TextScreen"
 import { OptionBtn } from "./components/OptionBtn";
 
 function placeholder(){
@@ -10,6 +11,7 @@ function placeholder(){
 function App() {
   return (
     <>
+
       <OptionBtn openMenu={placeholder}/>
     </>
   );
