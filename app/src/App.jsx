@@ -1,10 +1,16 @@
 import { useState } from "react";
 import "./styles.css";
+import "./components/OptionBtn"
+import { OptionBtn } from "./components/OptionBtn";
+
+function placeholder(){
+  console.log("it worked");
+}
 
 function App() {
   return (
     <>
-      <div className="wrapper"></div>
+      <OptionBtn openMenu={placeholder}/>
     </>
   );
 }
