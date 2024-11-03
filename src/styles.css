@@ -5,3 +5,45 @@ body {
 
 .wrapper {
 }
+
+.option-wrapper{
+  width: 300px;
+  height:250px;
+  background-color: rgba(255,20,147,0.25);
+  border-radius:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.girl{
+  margin:10px 0px;
+  border: 5px solid rgb(255,20,147);
+  border-radius: 10px;
+  width:60%;
+  height: 30%;
+  text-align: center;
+  font-size: larger;
+  cursor: pointer;
+}
+.girl:hover{
+  background-color: rgba(255,20,147,0.4);;
+}
+.exit{
+  width:50%;
+  height:15%;
+  border: 3px solid rgb(255,20,147);
+  border-radius: 5px;
+  background:none;
+  cursor: pointer;
+}
+.exit:hover{
+  background-color: rgba(255,20,147,0.4);;
+}
+.options-btn{
+  font-size: larger;
+  border: 5px solid rgb(255,20,147);
+  width:10%;
+  text-align: center;
+  cursor: pointer;
+}
