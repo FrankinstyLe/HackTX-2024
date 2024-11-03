@@ -1,12 +1,11 @@
-import {useContext} from 'react'
+import { createContext } from "react";
 
+const PersonalityContext = createContext();
 
-const PersonalityContext = React.createContext()
-
-export function usePersonality(){
-    return useContext(PersonalityContext)
+export function usePersonality() {
+  return useContext(PersonalityContext);
 }
 
-export const personalityProvider = ({children}) => {
-    const [personality,setPersonality] = useState(1)
-}
+export const personalityProvider = ({ children }) => {
+  const [personality, setPersonality] = useState(1);
+};
