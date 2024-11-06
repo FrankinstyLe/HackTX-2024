@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GEMINI_API_KEY } from "../key";
 //import { PersonaContext } from "./PersonalityContext";
 
 
@@ -37,7 +38,7 @@ export function Chatbox() {
       setPrompt('')
     
 
-      const apiKey = "AIzaSyDqQS7wrQO04ZNCI7bB1qApuvpsegYxIn0"
+      const apiKey = GEMINI_API_KEY;
       const genAI = new GoogleGenerativeAI(apiKey);
 
       const personalities = [
