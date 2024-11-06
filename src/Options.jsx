@@ -10,7 +10,7 @@ export function Options() {
     boxing: boxingBg,
     school: schoolBg,
   };
-  const [persona, setPersona] = useState(personaBackgrounds);
+ 
 
   const toggleVisibility = () => {
     setVisibility(!isVisible);
@@ -20,7 +20,7 @@ export function Options() {
     const border = document.getElementsByClassName("border");
     switch (personality) {
       case 0:
-        persona[0];
+        
         border.style["background-image"] =
           "url(img/backgrounds/school_background.jpg)";
         console.log("test");
@@ -42,7 +42,7 @@ export function Options() {
 
   return (
     <>
-      {isVisible && (
+      {!isVisible && (
         <div className="option-wrapper">
           <div onClick={() => changePersonality(0)} className="girl" id="1">
             Aiko
@@ -61,7 +61,7 @@ export function Options() {
           </button>
         </div>
       )}
-      {!isVisible && (
+      {isVisible && (
         <div className="options-btn" onClick={toggleVisibility}>
           Options
         </div>

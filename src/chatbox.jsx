@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+//import { PersonaContext } from "./PersonalityContext";
 
 
 
@@ -60,7 +61,7 @@ export function Chatbox() {
 
       const model = genAI.getGenerativeModel({
         model: "gemini-1.5-flash",
-        systemInstruction: personalities[2],
+        systemInstruction: personalities[1],
       });
 
       const generationConfig = {
@@ -94,6 +95,11 @@ export function Chatbox() {
             type="text"
             value={prompt}
             onChange={handleChange}
+            onKeyDown={(event)=>{
+              if(event.key==='Enter'){
+                promptGemini()
+              }
+            }}
           ></input>
           {userPrompts.map((value)=>{
             return(

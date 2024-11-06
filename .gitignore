@@ -28,3 +28,4 @@ dist-ssr
 client_secret_web.json
 token.json
 .env
+key.jsx
