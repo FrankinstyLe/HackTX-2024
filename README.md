@@ -1,12 +1,12 @@
-# Anime Girl Arcade !!!
+# Your New Arcade Best Friend!!!
 
 _LSC Computer Science Club's submission to HackTX 2024_
 
 ## Pitch 😎
 
-For those who want to enjoy the feeling of playing an old Japanese arcade machine and have fun talking to a AI chatbot, we have just the thing for you!
+For those who want to enjoy the feeling of playing an old arcade machine and have fun talking to a AI chatbot, we have just the thing for you!
 
-Welcome to the **Anime Girl Arcade!** We have three options to choose from: school girl, nurse, and fighter. Choose any of the three within the `options` menu.
+Welcome to the **Your New Arcade Best Friend!** We have three options to choose from: Mario, Pacman, and Sonic the Hedgehog. Choose any of the three within the `options` menu.
 
 ## Goals 💪
 
@@ -34,7 +34,7 @@ Welcome to the **Anime Girl Arcade!** We have three options to choose from: scho
 
 ### Frontend
 
-- [Figma Prototype](https://www.figma.com/design/VHmkAcwd0b1YiUhURhGhfD/HackTX-Figma?node-id=19-7&t=V6OxMpD3t9Mt1WBV-1)
+- [Figma Prototype](https://www.figma.com/design/VHmkAcwd0b1YiUhURhGhfD/HackTX-Figma?node-id=21-9&t=bbYskB4gEpmPF0Ge-1)
 - Vite
 - React
 
