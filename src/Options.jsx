@@ -1,14 +1,14 @@
 import { useState } from "react";
-import nurseBg from "./img/backgrounds/nurse_background.png";
-import boxingBg from "./img/backgrounds/boxing_background.webp";
-import schoolBg from "./img/backgrounds/school_background.jpg";
+import marioBg from "./img/backgrounds/mario_background.jpg";
+import pacmanBg from "./img/backgrounds/pacman_background.jpg";
+import sonicBg from "./img/backgrounds/sonic_background.jpg";
 
 export function Options() {
   const [isVisible, setVisibility] = useState(true);
   const personaBackgrounds = {
-    nurse: nurseBg,
-    boxing: boxingBg,
-    school: schoolBg,
+    mario: marioBg,
+    pacman: pacmanBg,
+    sonic: sonicBg,
   };
   const [persona, setPersona] = useState(personaBackgrounds);
 
@@ -22,19 +22,19 @@ export function Options() {
       case 0:
         persona[0];
         border.style["background-image"] =
-          "url(img/backgrounds/school_background.jpg)";
+          "url(img/backgrounds/mario_background.jpg)";
         console.log("test");
 
         break;
       case 1:
         persona[1];
         border.style["background-image"] =
-          "url(./img/backgrounds/nurse_background.png)";
+          "url(./img/backgrounds/pacman_background.jpg)";
         console.log(persona);
         break;
       case 2:
         persona[2];
-        border.style.background = "url(img/backgrounds/boxing_background.webp)";
+        border.style.background = "url(img/backgrounds/sonic_background.jpg)";
         console.log(persona);
         break;
     }
