@@ -44,16 +44,16 @@ export function Options() {
     <>
       {isVisible && (
         <div className="option-wrapper">
-          <div onClick={() => changePersonality(0)} className="girl" id="1">
-            Aiko
+          <div onClick={() => changePersonality(0)} className="persona" id="1">
+            Mario
           </div>
           <br />
-          <div onClick={() => changePersonality(1)} className="girl" id="2">
-            Hana
+          <div onClick={() => changePersonality(1)} className="persona" id="2">
+            Pacman
           </div>
           <br />
-          <div onClick={() => changePersonality(2)} className="girl" id="3">
-            Rika
+          <div onClick={() => changePersonality(2)} className="persona" id="3">
+            Sonic
           </div>
           <br />
           <button className="exit" onClick={toggleVisibility}>
