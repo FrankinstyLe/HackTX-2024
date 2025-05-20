@@ -8,6 +8,8 @@ For those who want to enjoy the feeling of playing an old arcade machine and hav
 
 Welcome to the **Your New Arcade Best Friend!** We have three options to choose from: Mario, Pacman, and Sonic the Hedgehog. Choose any of the three within the `options` menu.
 
+![Your New Arcade Best Friend](./screenshot.png)
+
 ## Goals 💪
 
 1. Win Best Arcade Theme
